@@ -7,7 +7,7 @@
   "showWheelOnLoadFD": {
     "type": "dropdown",
     "label": "Show Wheel On Load",
-    "value": "no",
+    "value": "yes",
     "options": {
       "yes": "Yes",
       "no": "No"
@@ -19,101 +19,51 @@
     "label": "Show Test Data On Load",
     "group": "Testing"
   },
-
-  "wheelSize": {
-    "type": "number",
-    "label": "Wheel size (!900)",
-    "value": 900,
-    "group": "Visual Set Up"
+  "spinCommandFD": {
+    "type": "text",
+    "label": "Broadcaster Spin Command",
+    "value": "!spin",
+    "group": "Chat Commands"
   },
-  "wheelStartingPositionX": {
-    "type": "number",
-    "label": "Starting X Position",
-    "value": 50,
-    "group": "Visual Set Up"
+  "wheelShowCommandFD": {
+    "type": "text",
+    "label": "Broadcaster Show Wheel Command",
+    "value": "!showwheel",
+    "group": "Chat Commands"
   },
-  "wheelStartingPositionY": {
-    "type": "number",
-    "label": "Starting Y Position",
-    "value": 50,
-    "group": "Visual Set Up"
+  "wheelHideCommandFD": {
+    "type": "text",
+    "label": "Broadcaster Hide Wheel Command",
+    "value": "!hidewheel",
+    "group": "Chat Commands"
+  },
+  "wheelClearCommandFD": {
+    "type": "text",
+    "label": "Broadcaster Clear Wheel Command",
+    "value": "!clearwheel",
+    "group": "Chat Commands"
   },
   "foregroundVideo": {
-    "type": "video-input",
-    "label": "Foreground Video",
+    "type": "dropdown",
+    "label": "Overlay Video",
     "value": "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/JayniusGamingTV_demo.webm",
-    "group": "Visual Set Up"
-  },
-    "foregroundVideoSizeFD": {
-    "type": "slider",
-    "label": "Video Size %",
-    "value": 110,
-    "min": 50,
-    "max": 150,
-    "steps": 1,
-    "group": "Visual Set Up"
-  },
-  "videoOffsetXFD": {
-    "type": "slider",
-    "label": "Video Offset X",
-    "value": 1,
-    "min": -50,
-    "max": 50,
-    "steps": 1,
-    "group": "Visual Set Up"
-  },
-  "videoOffsetYFD": {
-    "type": "slider",
-    "label": "Video Offset Y",
-    "value": 5,
-    "min": -50,
-    "max": 50,
-    "steps": 1,
+    "options": {
+      "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/JayniusGamingTV_demo.webm": "Wheel Of Kappa",
+      "https://github.com/ryanfreng/pjTestBot/blob/master/modules/.SE_Overlays/chatterWheel/assets/bit-life-chatter-wheel.webm?raw=true": "Bit Life Wheel",
+      "none": "None"
+    },
     "group": "Visual Set Up"
   },
   "foregroundImage": {
-    "type": "image-input",
-    "label": "Foreground Image",
-    "value": "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/streamElementsLogo.gif",
+    "type": "dropdown",
+    "label": "Overlay Image",
+    "value": "none",
+    "options": {
+      "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/streamElementsLogo.gif": "StreamElements Logo",
+      "none": "None"
+    },
     "group": "Visual Set Up"
   },
-  "foregroundImageSizeFD": {
-    "type": "slider",
-    "label": "Image Size %",
-    "value": 25,
-    "min": 0,
-    "max": 50,
-    "steps": 1,
-    "group": "Visual Set Up"
-  },
-  "foregroundImageRadiusFD": {
-    "type": "slider",
-    "label": "Foreground Image Radius",
-    "value": 50,
-    "min": 0,
-    "max": 50,
-    "steps": 1,
-    "group": "Visual Set Up"
-  },
-  "imageOffsetXFD": {
-    "type": "slider",
-    "label": "Image Offset X",
-    "value": 0,
-    "min": -50,
-    "max": 50,
-    "steps": 1,
-    "group": "Visual Set Up"
-  },
-  "imageOffsetYFD": {
-    "type": "slider",
-    "label": "Image Offset Y",
-    "value": 0,
-    "min": -50,
-    "max": 50,
-    "steps": 1,
-    "group": "Visual Set Up"
-  },
-
   "fontNameFD": {
     "type": "googleFont",
     "label": "Select a font:",
@@ -154,59 +104,7 @@
     "steps": 1,
     "group": "Visual Set Up"
   },
-  "gameOverDelayFD": {
-    "type": "slider",
-    "label": "Spin Over Delay (s)",
-    "value": 5,
-    "min": 1,
-    "max": 30,
-    "steps": 1,
-    "group": "Visual Set Up"
-  },
 
-  "spinCommandFD": {
-    "type": "text",
-    "label": "Broadcaster Spin Command",
-    "value": "!spin",
-    "group": "Game Set Up"
-  },
-  "wheelShowCommandFD": {
-    "type": "text",
-    "label": "Broadcaster Show Wheel Command",
-    "value": "!showwheel",
-    "group": "Game Set Up"
-  },
-  "wheelHideCommandFD": {
-    "type": "text",
-    "label": "Broadcaster Hide Wheel Command",
-    "value": "!hidewheel",
-    "group": "Game Set Up"
-  },
-  "wheelClearCommandFD": {
-    "type": "text",
-    "label": "Broadcaster Clear Wheel Command",
-    "value": "!clearwheel",
-    "group": "Game Set Up"
-  },
-  "clearPreviousWinnersFD": {
-    "type": "dropdown",
-    "label": "Clear Previous Winners Too With !clearwheel Command",
-    "value": "no",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Game Set Up"
-  },
-  "pointerAngleFD": {
-    "type": "slider",
-    "label": "Winner Angle",
-    "value": 0,
-    "min": 0,
-    "max": 360,
-    "steps": 15,
-    "group": "Game Set Up"
-  },
   "removeWinnersFD": {
     "type": "dropdown",
     "label": "Ignore Winners From Future Spins",
@@ -217,36 +115,10 @@
     },
     "group": "Game Set Up"
   },
-  "clearListAfterSpinsFD": {
-    "type": "dropdown",
-    "label": "Clear Chatter List Once Complete",
-    "value": "no",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Game Set Up"
-  },
   "ignoredChattersFD": {
     "type": "text",
     "label": "Ignored Chatters (comma separated)",
     "value": "streamelements,commanderroot",
-    "group": "Game Set Up"
-  },
-  "playSoundFD": {
-    "type": "dropdown",
-    "label": "Play Sound On Ticks",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Game Set Up"
-  },
-  "soundEffectFD": {
-    "type": "sound-input",
-    "label": "Sound Effect",
-    "value": "https://raw.githubusercontent.com/zarocknz/javascript-winwheel/master/examples/wheel_of_fortune/tick.mp3",
     "group": "Game Set Up"
   },
   "privileges": {
@@ -274,16 +146,9 @@
   },
   "minAmountFD": {
     "type": "number",
-    "label": "Minimum Goal Amount",
+    "label": "Goal Amount",
     "step": 1,
     "value": 10,
-    "group": "Game Set Up"
-  },
-  "maxAmountFD": {
-    "type": "number",
-    "label": "Maximum Goal Amount",
-    "step": 1,
-    "value": 15,
     "group": "Game Set Up"
   },
   "multipleSpinsFD": {
@@ -296,31 +161,38 @@
     },
     "group": "Game Set Up"
   },
-  "triggerToJoinCommandFDInfo1": {
-    "type": "hidden",
-    "label": "Only Add Chatters That Say \"Join\"",
-    "group": "Game Set Up"
-  },
-  "triggerToJoinFD": {
+  "playSoundFD": {
     "type": "dropdown",
-    "label": "Require A Raffle Word To Join",
-    "value": "no",
+    "label": "Play Sound On Ticks",
+    "value": "yes",
     "options": {
       "yes": "Yes",
       "no": "No"
     },
     "group": "Game Set Up"
   },
+  "soundEffectFD": {
+    "type": "sound-input",
+    "label": "Sound Effect",
+    "value": "https://raw.githubusercontent.com/zarocknz/javascript-winwheel/master/examples/wheel_of_fortune/tick.mp3",
+    "group": "Game Set Up"
+  },
+
+  "triggerToJoinCommandFDInfo1": {
+    "type": "hidden",
+    "label": "Require a 'raffle' word to join",
+    "group": "Raffle Mode"
+  },
   "triggerToJoinCommandFDInfo2": {
     "type": "hidden",
     "label": "e.g. !wheelword join",
-    "group": "Game Set Up"
+    "group": "Raffle Mode"
   },
   "triggerToJoinCommandFD": {
     "type": "text",
     "label": "Command to Enable/Set Raffle Word",
     "value": "!wheelword",
-    "group": "Game Set Up"
+    "group": "Raffle Mode"
   },
 
   "middleware1": {
@@ -333,7 +205,7 @@
     "label": "https://jebaited.net/tokens/ ->",
     "group": "Middleware Setup"
   },
-   "jebaitedAPITokenFD": {
+  "jebaitedAPITokenFD": {
     "type": "text",
     "label": "Token",
     "value": "need: botMsg",
@@ -349,22 +221,10 @@
     },
     "group": "Middleware Setup"
   },
-  "spinPrizeCommandFD": {
-    "type": "text",
-    "label": "Change Prize Command",
-    "value": "!spinprize",
-    "group": "Middleware Setup"
-  },
-  "spinPrizeFD": {
-    "type": "text",
-    "label": "Prize Response",
-    "value": "a shoutout",
-    "group": "Middleware Setup"
-  },
   "chatResponseFD": {
     "type": "text",
     "label": "Chat Winner Text",
-    "value": "{chatter} wins {prize}! PorscheWIN",
+    "value": "{chatter} wins! PorscheWIN",
     "group": "Middleware Setup"
   },
   "chatResponseDelayFD": {
@@ -383,16 +243,22 @@
     "group": "Animated Gradient Frame"
   },
   "frame2": {
-    "type":"hidden",
-    "label":"by Kagrayz",
+    "type": "hidden",
+    "label": "by Kagrayz",
     "group": "Animated Gradient Frame"
   },
   "mask": {
-     "type": "image-input",
-     "label": "Mask Image",
-     "value": "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/demo1.png",
-     "group": "Animated Gradient Frame"
-   },
+    "type": "dropdown",
+    "label": "Mask Image",
+    "value": "none",
+    "options": {
+      "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/demo1.png": "Solid Border",
+      "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/demo2.png": "Faded Border",
+      "https://raw.githubusercontent.com/pjonp/pjTestBot/master/modules/.SE_Overlays/chatterWheel/assets/demo3.png": "Faded Border With Center Plug",
+      "none": "None"
+    },
+    "group": "Animated Gradient Frame"
+  },
   "firstColor": {
     "type": "colorpicker",
     "label": "First color",
@@ -406,23 +272,50 @@
     "group": "Animated Gradient Frame"
   },
   "frameDuration": {
-  "type": "number",
+    "type": "number",
     "label": "Rotating duration, sec",
     "value": 2.5,
     "group": "Animated Gradient Frame"
   },
-   "gradientOverrideFD": {
-     "type": "slider",
-     "label": "Gradient Size Adjustment",
-     "value": 40,
-     "min": -100,
-     "max": 100,
-     "steps": 1,
-     "group": "Animated Gradient Frame"
-   },
   "cacheMask": {
     "type": "checkbox",
     "label": "Cache mask",
+    "group": "Animated Gradient Frame"
+  },
+  "gradientOverrideFD": {
+    "type": "hidden",
+    "value": 40,
+    "group": "Animated Gradient Frame"
+  },
+
+  "wheelSize": {
+    "type": "hidden",
+    "value": 900,
+    "group": "Animated Gradient Frame"
+  },
+  "wheelStartingPositionX": {
+    "type": "hidden",
+    "value": 50,
+    "group": "Animated Gradient Frame"
+  },
+  "wheelStartingPositionY": {
+    "type": "hidden",
+    "value": 50,
+    "group": "Animated Gradient Frame"
+  },
+  "foregroundVideoSizeFD": {
+    "type": "hidden",
+    "value": 110,
+    "group": "Animated Gradient Frame"
+  },
+  "foregroundImageSizeFD": {
+    "type": "hidden",
+    "value": 25,
+    "group": "Animated Gradient Frame"
+  },
+  "foregroundImageRadiusFD": {
+    "type": "hidden",
+    "value": 50,
     "group": "Animated Gradient Frame"
   }
 }
