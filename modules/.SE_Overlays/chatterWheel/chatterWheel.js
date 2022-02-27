@@ -82,15 +82,15 @@ let defaultPrizeList = [{
   },
 
   {
-    text: "Curls To Failure",
+    text: "Curls AMRAP",
     fillStyle: 'orange',
-    res: 'Curls To Failure'
+    res: 'Curls AMRAP'
   },
 
   {
-    text: "Girl Curls",
+    text: "Kid Curls",
     fillStyle: 'yellow',
-    res: 'Girl Curls'
+    res: 'Kid Curls'
   },
 
   {
@@ -106,9 +106,9 @@ let defaultPrizeList = [{
   },
 
   {
-    text: "Pull-ups To Failure",
+    text: "Pull-ups AMRAP",
     fillStyle: 'indigo',
-    res: 'Pull-ups To Failure'
+    res: 'Pull-ups AMRAP'
   },
   {
     text: "Video Clip",
@@ -117,9 +117,9 @@ let defaultPrizeList = [{
   },
 
   {
-    text: "Delt Fly to Failure",
+    text: "Reverse Fly AMRAP",
     fillStyle: 'purple',
-    res: 'Delt Fly to Failure'
+    res: 'Reverse Fly AMRAP'
   },
   {
     text: "Storytime",
@@ -127,60 +127,54 @@ let defaultPrizeList = [{
     res: 'Storytime'
   },
   {
-    text: "Triceps to Failure",
+    text: "Triceps AMRAP",
     fillStyle: 'orange',
-    res: 'Triceps to Failure'
+    res: 'Triceps AMRAP'
   },
   {
-    text: "Jump Squats",
+    text: "Karaoke",
     fillStyle: 'yellow',
-    res: 'Jump Squats'
+    res: 'Karaoke'
   },
-
   {
-    text: "Toe touch push-ups",
+    text: "Deadlifts AMRAP",
     fillStyle: 'green',
-    res: 'Toe touch push-ups'
+    res: 'Deadlifts AMRAP'
   },
   {
-    text: "Sumo Squats",
+    text: "Show Me Something",
     fillStyle: 'blue',
-    res: 'Sumo Squats'
+    res: 'Show Me Something'
   },
 
   {
-    text: "Side plank hip abductions",
+    text: "Chat Chooses",
     fillStyle: 'indigo',
-    res: 'Side plank hip abductions'
+    res: 'Chat Chooses'
   },
   {
-    text: "Crunches",
+    text: "Lateral Raises AMRAP",
     fillStyle: 'violet',
-    res: 'Crunches'
+    res: 'Lateral Raises AMRAP'
   },
   {
-    text: "Calf raises",
+    text: "Recommendations",
     fillStyle: 'purple',
-    res: 'Calf raises'
+    res: 'Recommendations'
   },
   {
-    text: "Ballet calf raises",
+    text: "Calf Raises AMRAP",
     fillStyle: 'red',
-    res: 'Ballet calf raises'
+    res: 'Calf Raises AMRAP'
   },
   {
-    text: "Lunge to knee raise",
+    text: "Work on it",
     fillStyle: 'orange',
-    res: 'Lunge to knee raise'
-  },
-  {
-    text: "Alt lunges",
-    fillStyle: 'yellow',
-    res: 'Alt lunges'
+    res: 'Work on it'
   },
   {
     text: "Bicycle Crunches",
-    fillStyle: 'green',
+    fillStyle: 'yellow',
     res: 'Bicycle Crunches'
   }
 
